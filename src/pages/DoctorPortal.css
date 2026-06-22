@@ -1,0 +1,115 @@
+.doctor-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dff6ff, #f5f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.doctor-card {
+  width: 85%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctor-header h1 {
+  font-size: 42px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.doctor-header p {
+  font-size: 20px;
+  color: #555;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+.doctor-info {
+  background: #eafaf1;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 25px;
+  line-height: 1.8;
+}
+
+.section {
+  margin-top: 30px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.section h2 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  padding-left: 25px;
+}
+
+.section li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.patient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.patient-box {
+  background: #dff9fb;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background: #3498db;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
