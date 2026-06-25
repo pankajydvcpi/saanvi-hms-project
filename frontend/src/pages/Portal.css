@@ -1,0 +1,271 @@
+.portal-page {
+  min-height: 100vh;
+  display: flex;
+  padding: 0;
+  background: linear-gradient(135deg, #7c3aed 0%, #2563eb 35%, #06b6d4 70%, #f59e0b 100%);
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.portal-page h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #f8fafc;
+}
+
+.portal-page p {
+  font-size: 18px;
+  color: #dbeafe;
+}
+
+.sidebar {
+  width: 260px;
+  padding: 24px 18px;
+  background: linear-gradient(180deg, #111827 0%, #1d4ed8 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.sidebar button {
+  margin-top: 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.portal-main {
+  flex: 1;
+  padding: 24px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fdf2f8 35%, #eff6ff 70%, #ecfeff 100%);
+  color: #0f172a;
+}
+
+.portal-main p {
+  color: #475569;
+}
+
+.topbar {
+  margin-bottom: 18px;
+}
+
+.profile-card,
+.panel {
+  background: linear-gradient(135deg, #ffffff 0%, #fef3c7 100%);
+  color: #0f172a;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.15);
+  border: 1px solid #fcd34d;
+}
+
+.profile-card h2,
+.panel h2 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.duty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.duty-card {
+  background: linear-gradient(135deg, #dbeafe 0%, #fef3c7 100%);
+  color: #1e3a8a;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  border: 1px solid #93c5fd;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.task-card input {
+  width: auto;
+  margin: 0;
+}
+
+.task-card.completed {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border-color: #22c55e;
+  color: #166534;
+  text-decoration: line-through;
+}
+
+.room-card {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #93c5fd;
+}
+
+.room-card.available {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #166534;
+}
+
+.room-card.occupied {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #991b1b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.portal-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.portal-card {
+  background: white;
+  color: #0f172a;
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.portal-card:hover {
+  transform: translateY(-8px);
+  background: #eff6ff;
+}
+
+.portal-card h2 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.doctor-btn {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.doctor-btn.secondary {
+  background: #64748b;
+}
+
+.doctor-textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.notification-list {
+  padding-left: 18px;
+  margin: 0;
+  color: #334155;
+}
+
+.notification-list li {
+  margin-bottom: 6px;
+}
+
+.availability-summary {
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+.availability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.availability-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #fef3c7 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.availability-card.active {
+  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  color: white;
+  border-color: #f59e0b;
+}
+
+@media print {
+  .sidebar,
+  .topbar,
+  .profile-card,
+  .doctor-btn,
+  select,
+  button {
+    display: none !important;
+  }
+
+  .panel {
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .portal-page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .portal-main {
+    padding: 16px;
+  }
+}
